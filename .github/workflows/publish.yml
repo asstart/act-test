@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "test"
-        uses: asstart/obsidian-publish-action@08ecfcd4995b72f5389fe148dc1d837f76841b8c
+        uses: asstart/obsidian-publish-action@afe996884f82724871eeb5eca972464bafc22cbb
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
