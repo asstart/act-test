@@ -9,11 +9,14 @@ jobs:
 
       - name: "checkout source"
         uses: actions/checkout@v3
+        with:
+          path: source
       
       - name: "checkout target"
         uses: actions/checkout@v3
         with:
           repository: asstart/vault
+          path: target
 
       - name: "test"
         uses: asstart/obsidian-publish-action@5e94e69f1429bc517ffc05312fd31ca0448d58fe
