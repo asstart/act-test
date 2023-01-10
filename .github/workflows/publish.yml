@@ -9,4 +9,4 @@ jobs:
       - name: "test"
         uses: asstart/obsidian-publish-action@97d5d984c258f934a2f49135dea953b1652e998c
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
