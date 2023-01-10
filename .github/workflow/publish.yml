@@ -1,0 +1,10 @@
+name: Publish
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "test"
+        uses: asstart/obsidian-publish-action@b0fb5d7974680c9a34abc5ba2ea9322e05df4241
