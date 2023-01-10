@@ -12,6 +12,7 @@ jobs:
       
       - name: "checkout target"
         uses: actions/checkout@v3
+        with:
           repository: git@github.com:asstart/vault.git
 
       - name: "test"
