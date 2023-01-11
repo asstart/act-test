@@ -10,4 +10,4 @@ jobs:
         uses: asstart/obsidian-publish-jsaction/actions/compose@main
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
-          repor: asstart/vault
+          repo: asstart/vault
