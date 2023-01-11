@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "test"
-        uses: asstart/obsidian-publish-jsaction/actions/compose@e24bd51e606634f922a8f09e3e8af245f112375f
+        uses: asstart/obsidian-publish-jsaction/actions/compose@main
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
           repo: asstart/vault
