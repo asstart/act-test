@@ -11,3 +11,4 @@ jobs:
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
           repo: asstart/vault
+          tags: random
