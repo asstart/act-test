@@ -1,6 +1,6 @@
-# HW3
-
 ---
 tags:
 - random
 ---
+
+# HW3
