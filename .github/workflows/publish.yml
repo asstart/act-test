@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: "test"
         uses: asstart/obsidian-publish-jsaction/actions/compose@main
+        env:
+          GH_TOKEN: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
           repo: asstart/vault
