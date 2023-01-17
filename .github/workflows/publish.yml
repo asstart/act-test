@@ -12,5 +12,5 @@ jobs:
           GH_TOKEN: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
-          repo: asstart/vault
+          targetRepo: asstart/vault
           tags: random
