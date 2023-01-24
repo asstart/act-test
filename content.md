@@ -279,3 +279,118 @@ Document contained examples of [GFM spec](https://github.github.com/gfm/#overvie
 >## foo #\##
 ># foo \#
 
+## Setext headings
+
+[Simple examples](https://github.github.com/gfm/#example-50)
+
+>```
+>Foo *bar*
+>=========
+>```
+>Foo *bar*
+>=========
+
+>```
+>Foo *bar*
+>---------
+>```
+>Foo *bar*
+>---------
+
+[The content of the header may span more than one line](https://github.github.com/gfm/#example-51)
+
+>```
+>  Foo *bar
+>baz*→
+>====
+>```
+>  Foo *bar
+>baz*→
+>====
+
+[The underlining can be any length](https://github.github.com/gfm/#example-53)
+
+>```
+>Foo
+>-------------------------
+>```
+>Foo
+>-------------------------
+
+>```
+>Foo
+>=
+>```
+>Foo
+>=
+
+[The heading content can be indented up to three spaces, and need not line up with the underlining](https://github.github.com/gfm/#example-54)
+
+>```
+>   Foo
+>---
+>```
+>   Foo
+>---
+
+>```
+>  Foo
+>-----
+>```
+>  Foo
+>-----
+
+>```
+>  Foo
+>  ===
+>```
+>  Foo
+>  ===
+
+[The setext heading underline cannot contain internal spaces](https://github.github.com/gfm/#example-58)
+
+>```
+>Foo
+>= =
+>```
+>Foo
+>= =
+
+[A blank line is needed between a paragraph and a following setext heading, since otherwise the paragraph becomes part of the heading’s content](https://github.github.com/gfm/#example-65)
+
+>```
+>Foo
+>Bar
+>---
+>```
+>Foo
+>Bar
+>---
+
+[Blank line is not required before or after setext headings](https://github.github.com/gfm/#example-66)
+
+>```
+>---
+>Foo
+>---
+>Bar
+>---
+>Baz
+>```
+>---
+>Foo
+>---
+>Bar
+>---
+>Baz
+
+[Setext headings cannot be empty](https://github.github.com/gfm/#example-67)
+
+>```
+>
+>====
+>```
+>
+>====
+
+
