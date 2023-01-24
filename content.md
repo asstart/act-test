@@ -11,7 +11,27 @@ Document contained examples of [GFM spec](https://github.github.com/gfm/#overvie
 
 ## Thematic breaks
 
+## Test
+
+| syntax      | example |
+|-------------|---------|
+| ``` *** ``` | ***     |
+
+>```
+>---
+>```
+>---
+>
+>
+
+```
+___
+```
+___
+
+
 [A line consisting of 0-3 spaces of indentation, followed by a sequence of three or more matching -, _, or * characters, each followed optionally by any number of spaces or tabs, forms a thematic break.](https://github.github.com/gfm/#example-13)
+
 
 ```
 ***
