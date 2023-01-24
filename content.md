@@ -875,6 +875,10 @@ baz
   - [x] baz
 - [ ] bim
 ```
+- [x] foo
+  - [ ] bar
+  - [x] baz
+- [ ] bim
 
 ## Link reference definitions
 [Spec](https://github.github.com/gfm/#link-reference-definition)
