@@ -512,3 +512,443 @@ bbb
 ```
 aaa     
 bbb     
+
+## Tables(GFM extension)
+
+[Simple example](https://github.github.com/gfm/#example-198)
+
+```
+| footable | bartable |
+| -------- | -------- |
+| baztable | bimtable |
+```
+| footable | bartable |
+| -------- | -------- |
+| baztable | bimtable |
+
+
+[Cells in one column don’t need to match length, though it’s easier to read if they are. Likewise, use of leading and trailing pipes may be inconsistent](https://github.github.com/gfm/#example-199)
+
+```
+| abc | defghi |
+:-: | -----------:
+bartable | baztable
+```
+| abc | defghi |
+:-: | -----------:
+bartable | baztable
+
+[Include a pipe in a cell’s content by escaping it, including inside other inline spans](https://github.github.com/gfm/#example-200)
+
+```
+| f\|oo  |
+| ------ |
+| b `\|` az |
+| b **\|** im |
+```
+| f\|oo  |
+| ------ |
+| b `\|` az |
+| b **\|** im |
+
+[The table is broken at the first empty line, or beginning of another block-level structure](https://github.github.com/gfm/#example-201)
+
+```
+| abc | def |
+| --- | --- |
+| bartable | baztable |
+> bartable
+```
+| abc | def |
+| --- | --- |
+| bartable | baztable |
+> bartable
+
+[The header row must match the delimiter row in the number of cells. If not, a table will not be recognized](https://github.github.com/gfm/#example-203)
+
+```
+| abc | def |
+| --- |
+| bartable |
+```
+| abc | def |
+| --- |
+| bartable |
+
+[The remainder of the table’s rows may vary in the number of cells. If there are a number of cells fewer than the number of cells in the header row, empty cells are inserted. If there are greater, the excess is ignored](https://github.github.com/gfm/#example-204)
+
+```
+| abc | def |
+| --- | --- |
+| bartable |
+| bartable | baztable | bootable |
+```
+| abc | def |
+| --- | --- |
+| bartable |
+| bartable | baztable | bootable |
+
+[If there are no rows in the body, no <tbody> is generated in HTML output](https://github.github.com/gfm/#example-205)
+
+```
+| abc | def |
+| --- | --- |
+```
+| abc | def |
+| --- | --- |
+
+
+## Block quotes 
+
+[Simple example](https://github.github.com/gfm/#example-206)
+
+```
+> # Foo
+> bar
+> baz
+```
+> # Foo
+> bar
+> baz
+
+[The spaces after the > characters can be omitted](https://github.github.com/gfm/#example-207)
+
+```
+># Foo
+>bar
+> baz
+```
+
+[The > characters can be indented 1-3 spaces](https://github.github.com/gfm/#example-208)
+
+```
+   > # Foo
+  > bar
+ > baz
+```
+   > # Foo
+  > bar
+ > baz
+
+[The Laziness clause allows us to omit the > before paragraph continuation text](https://github.github.com/gfm/#example-210)
+
+```
+> # Foo
+> bar
+baz
+```
+> # Foo
+> bar
+baz
+
+```
+> bar
+baz
+> foo
+```
+> bar
+baz
+> foo
+
+
+## List items
+
+[Here are some examples showing how far content must be indented to be put under the list item](https://github.github.com/gfm/#example-233)
+
+```
+- one
+
+ two
+```
+- one
+
+ two
+
+```
+ -    one
+
+      two
+```
+ -    one
+
+      two
+
+[At least one space is needed between the list marker and any following content](https://github.github.com/gfm/#example-239)
+
+```
+-one
+
+2.two
+```
+-one
+
+2.two
+
+[A list item may contain blocks that are separated by more than one blank line](https://github.github.com/gfm/#example-240)
+
+```
+- foo
+
+
+  bar
+```
+- foo
+
+
+  bar
+
+[A list item may contain any kind of block](https://github.github.com/gfm/#example-241)
+
+~~~
+1.  foo
+
+    ```
+    bar
+    ```
+
+    baz
+
+    > bam
+~~~
+1.  foo
+
+    ```
+    bar
+    ```
+
+    baz
+
+    > bam
+
+[Ordered list start numbers must be nine digits or less](https://github.github.com/gfm/#example-243)
+
+```
+123456789. ok
+```
+123456789. ok
+
+```
+1234567890. not ok
+```
+1234567890. not ok
+
+[A start number may begin with 0s](https://github.github.com/gfm/#example-245)
+
+```
+0. ok
+```
+0. ok
+
+```
+003. ok
+```
+003. ok
+
+[A start number may not be negative](https://github.github.com/gfm/#example-247)
+
+```
+-1. not ok
+```
+-1. not ok
+
+[Some list items that start with a blank line but are not empty](https://github.github.com/gfm/#example-256)
+
+~~~
+-
+  foo
+-
+  ```
+  bar
+  ```
+-
+      baz
+~~~
+-
+  foo
+-
+  ```
+  bar
+  ```
+-
+      baz
+    
+[Empty item](https://github.github.com/gfm/#example-259)
+
+```
+- foo
+-
+- bar
+```
+- foo
+-
+- bar
+
+```
+1. foo
+2.
+3. bar
+```
+1. foo
+2.
+3. bar
+
+[A list may start or end with an empty list item](https://github.github.com/gfm/#example-262)
+
+```
+*
+```
+*
+
+[At least two spaces indent needed to create sublist](https://github.github.com/gfm/#example-272)
+
+```
+- foo
+  - bar
+    - baz
+      - boo
+```
+- foo
+  - bar
+    - baz
+      - boo
+
+[One is not enough](https://github.github.com/gfm/#example-273)
+
+```
+- foo
+ - bar
+  - baz
+   - boo
+```
+- foo
+ - bar
+  - baz
+   - boo
+
+[Here four needed, beacuse the list marker is wider](https://github.github.com/gfm/#example-274)
+
+```
+10) foo
+    - bar
+```
+10) foo
+    - bar
+
+[Three is not enough](https://github.github.com/gfm/#example-275)
+
+```
+10) foo
+   - bar
+```
+10) foo
+   - bar
+
+[A list item can contain a heading](https://github.github.com/gfm/#example-278)
+
+```
+- # Foo
+- Bar
+  ---
+  baz
+```
+- # Foo
+- Bar
+  ---
+  baz
+
+## Task list items (GFM extension) 
+
+[Simple example](https://github.github.com/gfm/#example-279)
+
+```
+- [ ] foo
+- [x] bar
+```
+- [ ] foo
+- [x] bar
+
+[Task lists can be arbitrarily nested](https://github.github.com/gfm/#example-280)
+
+```
+- [x] foo
+  - [ ] bar
+  - [x] baz
+- [ ] bim
+```
+
+## Link reference definitions
+[Spec](https://github.github.com/gfm/#link-reference-definition)
+
+```
+[foo1]: /url "title"
+
+[foo1]
+```
+[foo1]: /url "title"
+
+[foo1]
+
+```
+   [foo2]: 
+      /url  
+           'the title'  
+
+[foo2]
+```
+   [foo2]: 
+      /url  
+           'the title'  
+
+[foo2]
+
+```
+[Foo3*bar\]]:my_(url) 'title (with parens)'
+
+[Foo3*bar\]]
+```
+[Foo3*bar\]]:my_(url) 'title (with parens)'
+
+[Foo3*bar\]]
+
+```
+[Foo4 bar]:
+<my url
+'title'
+
+[Foo4 bar]
+```
+[Foo4 bar]:
+<my url
+'title'
+
+[Foo4 bar]
+
+```
+[foo5]: /url '
+title
+line1
+line2
+'
+
+[foo5]
+```
+[foo5]: /url '
+title
+line1
+line2
+'
+
+[foo5]
+
+[The title may be omitted](https://github.github.com/gfm/#example-167)
+
+```
+[foo6]:
+/url
+
+[foo6]
+```
+[foo6]:
+/url
+
+[foo6]
