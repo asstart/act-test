@@ -448,75 +448,75 @@ Baz
 [Spec](https://github.github.com/gfm/#link-reference-definition)
 
 ```
-[foo]: /url "title"
+[foo1]: /url "title"
 
-[foo]
+[foo1]
 ```
-[foo]: /url "title"
+[foo1]: /url "title"
 
-[foo]
+[foo1]
 
 ```
-   [foo]: 
+   [foo2]: 
       /url  
            'the title'  
 
-[foo]
+[foo2]
 ```
-   [foo]: 
+   [foo2]: 
       /url  
            'the title'  
 
-[foo]
+[foo2]
 
 ```
-[Foo*bar\]]:my_(url) 'title (with parens)'
+[Foo3*bar\]]:my_(url) 'title (with parens)'
 
-[Foo*bar\]]
+[Foo3*bar\]]
 ```
-[Foo*bar\]]:my_(url) 'title (with parens)'
+[Foo3*bar\]]:my_(url) 'title (with parens)'
 
-[Foo*bar\]]
+[Foo3*bar\]]
 
 ```
-[Foo bar]:
+[Foo4 bar]:
 <my url
 'title'
 
-[Foo bar]
+[Foo4 bar]
 ```
-[Foo bar]:
+[Foo4 bar]:
 <my url
 'title'
 
-[Foo bar]
+[Foo4 bar]
 
 ```
-[foo]: /url '
+[foo5]: /url '
 title
 line1
 line2
 '
 
-[foo]
+[foo5]
 ```
-[foo]: /url '
+[foo5]: /url '
 title
 line1
 line2
 '
 
-[foo]
+[foo5]
 
 [The title may be omitted](https://github.github.com/gfm/#example-167)
 
 ```
-[foo]:
+[foo6]:
 /url
 
-[foo]
+[foo6]
 ```
-[foo]:
+[foo6]:
 /url
 
-[foo]
+[foo6]
