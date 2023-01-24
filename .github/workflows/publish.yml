@@ -15,3 +15,4 @@ jobs:
           targetRepo: asstart/vault
           tags: random
           jekyllTheme: just-the-docs
+          colorSchema: dark
