@@ -520,3 +520,157 @@ line2
 /url
 
 [foo6]
+
+## Paragraphs
+
+[Simpl example](https://github.github.com/gfm/#example-189)
+
+```
+aaa
+
+bbb
+```
+aaa
+
+bbb
+
+[Paragraphs can contain multiple lines, but no blank lines](https://github.github.com/gfm/#example-190)
+
+```
+aaa
+bbb
+
+ccc
+ddd
+```
+aaa
+bbb
+
+ccc
+ddd
+
+[Multiple blank lines between paragraph have no effect](https://github.github.com/gfm/#example-191)
+
+```
+aaa
+
+
+bbb
+```
+aaa
+
+
+bbb
+
+[Leading spaces are skipped](https://github.github.com/gfm/#example-192)
+
+```
+  aaa
+ bbb
+```
+  aaa
+ bbb
+
+[Lines after the first may be indented any amount, since indented code blocks cannot interrupt paragraphs](https://github.github.com/gfm/#example-193)
+
+```
+aaa
+             bbb
+                                       ccc
+```
+aaa
+             bbb
+                                       ccc
+
+[Final spaces are stripped before inline parsing, so a paragraph that ends with two or more spaces will not end with a hard line break](https://github.github.com/gfm/#example-196)
+
+```
+aaa     
+bbb     
+```
+aaa     
+bbb     
+
+## Tables(GFM extension)
+
+[Simple example](https://github.github.com/gfm/#example-198)
+
+```
+| footable | bartable |
+| -------- | -------- |
+| baztable | bimtable |
+```
+| footable | bartable |
+| -------- | -------- |
+| baztable | bimtable |
+
+
+[Cells in one column don’t need to match length, though it’s easier to read if they are. Likewise, use of leading and trailing pipes may be inconsistent](https://github.github.com/gfm/#example-199)
+
+```
+| abc | defghi |
+:-: | -----------:
+bartable | baztable
+```
+| abc | defghi |
+:-: | -----------:
+bartable | baztable
+
+[Include a pipe in a cell’s content by escaping it, including inside other inline spans](https://github.github.com/gfm/#example-200)
+
+```
+| f\|oo  |
+| ------ |
+| b `\|` az |
+| b **\|** im |
+```
+| f\|oo  |
+| ------ |
+| b `\|` az |
+| b **\|** im |
+
+[The table is broken at the first empty line, or beginning of another block-level structure](https://github.github.com/gfm/#example-201)
+
+```
+| abc | def |
+| --- | --- |
+| bartable | baztable |
+> bartable
+```
+| abc | def |
+| --- | --- |
+| bartable | baztable |
+> bartable
+
+[The header row must match the delimiter row in the number of cells. If not, a table will not be recognized](https://github.github.com/gfm/#example-203)
+
+```
+| abc | def |
+| --- |
+| bartable |
+```
+| abc | def |
+| --- |
+| bartable |
+
+[The remainder of the table’s rows may vary in the number of cells. If there are a number of cells fewer than the number of cells in the header row, empty cells are inserted. If there are greater, the excess is ignored](https://github.github.com/gfm/#example-204)
+
+```
+| abc | def |
+| --- | --- |
+| bartable |
+| bartable | baztable | bootable |
+```
+| abc | def |
+| --- | --- |
+| bartable |
+| bartable | baztable | bootable |
+
+[If there are no rows in the body, no <tbody> is generated in HTML output](https://github.github.com/gfm/#example-205)
+
+```
+| abc | def |
+| --- | --- |
+```
+| abc | def |
+| --- | --- |
