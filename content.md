@@ -7,8 +7,6 @@ tags:
 
 Document contained examples of [GFM spec](https://github.github.com/gfm/#overview)
 
-# Editor.md
-
 ## Thematic breaks
 
 [A line consisting of 0-3 spaces of indentation, followed by a sequence of three or more matching -, _, or * characters, each followed optionally by any number of spaces or tabs, forms a thematic break.](https://github.github.com/gfm/#example-13)
@@ -931,3 +929,23 @@ baz
 - Bar
   ---
   baz
+
+## Task list items (GFM extension) 
+
+[Simple example](https://github.github.com/gfm/#example-279)
+
+```
+- [ ] foo
+- [x] bar
+```
+- [ ] foo
+- [x] bar
+
+[Task lists can be arbitrarily nested](https://github.github.com/gfm/#example-280)
+
+```
+- [x] foo
+  - [ ] bar
+  - [x] baz
+- [ ] bim
+```
