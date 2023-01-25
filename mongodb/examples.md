@@ -1,3 +1,7 @@
+---
+tags:
+- random
+---
 # Collection of mongodb receipts
 
 ## Merge fields to subdocument

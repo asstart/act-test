@@ -1,3 +1,7 @@
+---
+tags:
+- random
+---
 # Mongo DB Data Modeling course summary
 
 [Course](https://learn.mongodb.com/courses/m320-mongodb-data-modeling)

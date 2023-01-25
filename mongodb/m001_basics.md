@@ -1,3 +1,7 @@
+---
+tags:
+- random
+---
 # Mongo Basics course summary
 
 ## Tools
