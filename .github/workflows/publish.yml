@@ -16,3 +16,4 @@ jobs:
           tags: random
           jekyllTheme: just-the-docs
           colorSchema: dark
+          publishAll: true
