@@ -10,6 +10,5 @@ jobs:
         uses: asstart/obsidian-publish-jsaction/actions/compose@main
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
-          targetRepo: asstart/obsidin-publish-jsaction-test
           publishAll: true
           targetFolder: '/docs'
