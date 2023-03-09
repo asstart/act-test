@@ -8,12 +8,7 @@ jobs:
     steps:
       - name: "test"
         uses: asstart/obsidian-publish-jsaction/actions/compose@main
-        env:
-          GH_TOKEN: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
-          targetRepo: asstart/vault
-          tags: random
-          jekyllTheme: just-the-docs
-          colorSchema: dark
+          targetRepo: asstart/obsidin-publish-jsaction-test
           publishAll: true
