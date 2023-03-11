@@ -1,4 +1,6 @@
 ---
+tags:
+- example 
 ---
 
 **bold text**

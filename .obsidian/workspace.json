@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mongodb/examples.md",
-                "mode": "source",
+                "file": "Syntax Target.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mongodb/examples.md",
+                "file": "Syntax Target.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mongodb/examples.md",
+                "file": "Syntax Target.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mongodb/examples.md"
+                "file": "Syntax Target.md"
               }
             }
           }
@@ -146,11 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84a8f46b51c1bf4c",
+  "active": "642b20e6448f132a",
   "lastOpenFiles": [
+    "Syntax.md",
+    "mongodb/examples.md",
     "Syntax Target.md",
     "Content.md",
-    "Syntax.md",
     "Syntax image.jpg"
   ]
 }

@@ -1,0 +1,16 @@
+name: Publish Same Repo Root
+
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "publish"
+        uses: asstart/obsidian-publish-jsaction/actions/compose@main
+        with:
+          publishAll: true
+          tags: example
