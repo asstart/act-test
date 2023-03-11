@@ -1,0 +1,15 @@
+name: Publish Same Repo Docs
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "publish"
+        uses: asstart/obsidian-publish-jsaction/actions/compose@main
+        with:
+          token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
+          publishAll: true
+          targetFolder: docs
+          targetBranch: gh-pages-docs
