@@ -12,5 +12,4 @@ jobs:
       - name: "publish"
         uses: asstart/obsidian-publish-jsaction/actions/compose@main
         with:
-          publishAll: true
           tags: example
