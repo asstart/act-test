@@ -1,4 +1,4 @@
-name: Publish Same Repo Root
+name: Publish Minimal Conf Example Page
 
 on: [workflow_dispatch]
 
