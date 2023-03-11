@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "publish"
-        uses: asstart/obsidian-publish-jsaction/actions/compose@f/fix-push-root
+        uses: asstart/obsidian-publish-jsaction/actions/compose@main
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
           publishAll: true
