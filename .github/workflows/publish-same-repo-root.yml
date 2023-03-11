@@ -1,0 +1,14 @@
+name: Publish Same Repo Root
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "publish"
+        uses: asstart/obsidian-publish-jsaction/actions/compose@f/fix-push-root
+        with:
+          token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
+          publishAll: true
+          targetBranch: gh-pages-root

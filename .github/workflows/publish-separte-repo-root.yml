@@ -1,13 +1,15 @@
-name: Publish
+name: Publish Separate Repo Root
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: "test"
+      - name: "publish"
         uses: asstart/obsidian-publish-jsaction/actions/compose@f/fix-push-root
         with:
           token: ${{ secrets.OBISDIAN_PUBLISH_TOKEN }}
           publishAll: true
+          targetRepo: asstart/obsidian-publish-action-test-sep
+          targetBranch: gh-pages-root
