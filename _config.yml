@@ -1,0 +1,18 @@
+plugins:
+  - jekyll-remote-theme
+title: Full Conf Example
+description: It's description of my obsidian site
+remote_theme: asstart/just-the-docs
+baseurl: /obsidian-publish-action-test
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  rel_url: true
+  button: false
+mermaid:
+  version: 9.1.3
+heading_anchors: true
+color_scheme: dark
