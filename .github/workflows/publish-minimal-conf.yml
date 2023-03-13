@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "publish"
-        uses: asstart/obsidian-publish-jsaction/actions/compose@main
+        uses: asstart/obsidian-publish-jsaction/actions/compose@f/doc
         with:
           tags: example
